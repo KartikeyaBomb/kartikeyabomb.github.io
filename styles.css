@@ -188,6 +188,26 @@ h2 {
   line-height: 1.8;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link span {
+  display: inline-block;
+  transition: transform 180ms ease;
+}
+
+.project-link:hover span {
+  transform: translate(2px, -2px);
+}
+
 
 footer {
   display: flex;
