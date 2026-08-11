@@ -36,10 +36,27 @@ footer {
 
 .intro {
   min-height: 88vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+  align-items: center;
+  gap: clamp(48px, 8vw, 110px);
   padding: 72px 0;
+}
+
+.intro-photo {
+  width: 100%;
+  height: min(68vh, 650px);
+  margin: 0;
+  overflow: hidden;
+  background: var(--visual);
+}
+
+.intro-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 72%;
 }
 
 .eyebrow,
@@ -62,7 +79,7 @@ footer {
 h1 {
   margin: 0;
   max-width: 900px;
-  font-size: clamp(4.5rem, 12vw, 10rem);
+  font-size: clamp(4.5rem, 8.5vw, 8rem);
   font-weight: 500;
   letter-spacing: -0.085em;
   line-height: 0.8;
@@ -234,7 +251,13 @@ footer p {
 
   .intro {
     min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 54px;
     padding: 72px 0 100px;
+  }
+
+  .intro-photo {
+    height: min(120vw, 570px);
   }
 
   h1 {

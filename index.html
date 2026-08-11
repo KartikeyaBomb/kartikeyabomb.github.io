@@ -14,24 +14,29 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <main>
       <header class="intro" aria-labelledby="page-title">
-        <h1 id="page-title">Kartikeya<br />Bomb<span class="period">.</span></h1>
-        <p class="bio">
-          I’m a student at Rhodes College studying computer science, mathematics,
-          and economics. I like building software around problems I find
-          interesting, particularly across AI, distributed systems, and
-          full-stack products.
-        </p>
-        <nav class="links" aria-label="External links">
-          <a href="#projects">Projects <span>↓</span></a>
-          <a href="https://github.com/KartikeyaBomb" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-          <a href="https://www.linkedin.com/in/karti-bomb-b13ab72ba/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-          <a href="resume.pdf" target="_blank">Résumé <span>↗</span></a>
-        </nav>
+        <div class="intro-copy">
+          <h1 id="page-title">Kartikeya<br />Bomb<span class="period">.</span></h1>
+          <p class="bio">
+            I’m a student at Rhodes College studying computer science, mathematics,
+            and economics. I like building software around problems I find
+            interesting, particularly across AI, distributed systems, and
+            full-stack products.
+          </p>
+          <nav class="links" aria-label="External links">
+            <a href="#projects">Projects <span>↓</span></a>
+            <a href="https://github.com/KartikeyaBomb" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/karti-bomb-b13ab72ba/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            <a href="resume.pdf" target="_blank">Résumé <span>↗</span></a>
+          </nav>
+        </div>
+        <figure class="intro-photo">
+          <img src="portrait.jpg" alt="Kartikeya Bomb overlooking a mountain landscape" />
+        </figure>
       </header>
 
       <section class="projects" id="projects" aria-labelledby="projects-title">
@@ -42,7 +47,6 @@
 
         <div class="project-grid">
           <article class="project project-featured">
-            <p class="project-number">01</p>
             <div class="project-copy">
               <h2>SafeZone</h2>
               <p class="project-description">A real-time disaster response platform that brings live hazards, relief resources, and personalized safety guidance into one map.</p>
@@ -52,7 +56,6 @@
           </article>
 
           <article class="project">
-            <p class="project-number">02</p>
             <div class="project-copy">
               <h2>ReefWatch</h2>
               <p class="project-description">An edge monitoring network that uses compact audio-vision models to track coral reef health, even with unreliable connectivity.</p>
@@ -61,7 +64,6 @@
           </article>
 
           <article class="project">
-            <p class="project-number">03</p>
             <div class="project-copy">
               <h2>LynxLifts</h2>
               <p class="project-description">An AI-powered campus rideshare that matches students by route and timing while supporting live tracking, messaging, and payments.</p>
@@ -71,7 +73,6 @@
           </article>
 
           <article class="project">
-            <p class="project-number">04</p>
             <div class="project-copy">
               <h2>SportsGuessr</h2>
               <p class="project-description">A GeoGuessr-inspired Android game where players place sports events on the map and score points based on distance.</p>
@@ -80,7 +81,6 @@
           </article>
 
           <article class="project">
-            <p class="project-number">05</p>
             <div class="project-copy">
               <h2>Memphis Route Request</h2>
               <p class="project-description">A hackathon-winning route request platform that visualizes resident demand and helps uncover underserved transit areas.</p>
