@@ -124,36 +124,23 @@ h1 {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
 }
 
 .project {
-  display: flex;
-  min-height: 410px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(28px, 4vw, 52px);
-  border-right: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  min-height: 300px;
+  align-items: start;
+  gap: clamp(24px, 4vw, 70px);
+  padding: clamp(32px, 5vw, 66px) 0;
   border-bottom: 1px solid var(--line);
-  transition: background 180ms ease, color 180ms ease;
+  transition: padding 180ms ease;
 }
 
 .project:hover {
-  background: var(--ink);
-  color: var(--background);
-}
-
-.project-featured {
-  grid-column: 1 / -1;
-}
-
-.project-featured {
-  min-height: 470px;
-  background: var(--accent);
-  color: var(--ink);
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .project-number {
@@ -164,19 +151,22 @@ h1 {
 }
 
 .project-copy {
-  max-width: 720px;
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: minmax(240px, .8fr) minmax(320px, 1.2fr);
+  gap: 0 clamp(24px, 4vw, 70px);
 }
 
 h2 {
   margin: 0;
-  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-size: clamp(2.2rem, 4vw, 4.1rem);
   font-weight: 500;
   letter-spacing: -0.055em;
   line-height: 0.95;
 }
 
 .project-description {
-  margin: 30px 0 18px;
+  margin: 0 0 18px;
   color: inherit;
   font-size: 1.08rem;
   line-height: 1.65;
@@ -186,6 +176,21 @@ h2 {
   margin: 0;
   opacity: .68;
   line-height: 1.8;
+}
+
+.project-copy > h2 {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+
+.project-copy > .project-description,
+.project-copy > .project-stack,
+.project-copy > .project-link {
+  grid-column: 2;
+}
+
+.project-copy > .project-link {
+  justify-self: start;
 }
 
 .project-link {
@@ -244,13 +249,21 @@ footer p {
     padding: 70px 0 90px;
   }
 
-  .project-grid {
-    grid-template-columns: 1fr;
+  .project {
+    grid-template-columns: 32px minmax(0, 1fr);
+    min-height: auto;
+    gap: 14px 18px;
+    padding: 36px 0 42px;
   }
 
-  .project {
-    grid-column: 1 / -1;
-    min-height: 370px;
+  .project:hover {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-copy {
+    display: block;
+    grid-column: 2;
   }
 }
 
