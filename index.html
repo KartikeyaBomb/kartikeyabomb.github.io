@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kartikeya Bomb — computer science, mathematics, and economics student at Rhodes College."
+    />
+    <title>Kartikeya Bomb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">Kartikeya<br />Bomb<span class="period">.</span></h1>
+        <p class="bio">
+          I’m a student at Rhodes College studying computer science, mathematics,
+          and economics. I like building software around problems I find
+          interesting, particularly across AI, distributed systems, and
+          full-stack products.
+        </p>
+        <nav class="links" aria-label="External links">
+          <a href="https://github.com/kartibomb" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/kartibomb" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a href="resume.pdf" target="_blank">Résumé <span>↗</span></a>
+        </nav>
+      </header>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow" id="projects-title">Selected projects</p>
+          <p class="project-count" aria-live="polite"><span id="current-number">01</span> / <span id="total-number">05</span></p>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <button class="arrow arrow-left" id="previous" type="button" aria-label="Previous project">←</button>
+
+          <article class="project" aria-live="polite">
+            <div class="project-visual" id="project-visual" aria-hidden="true">
+              <div class="visual-grid"></div>
+              <div class="visual-orbit"></div>
+              <div class="visual-card">
+                <span class="visual-index" id="visual-index">01</span>
+                <strong id="visual-monogram">SZ</strong>
+                <span class="visual-status">Live system</span>
+              </div>
+            </div>
+
+            <div class="project-copy">
+              <p class="project-label" id="project-label">Project 01</p>
+              <h2 id="project-name">Project name</h2>
+              <p class="project-description" id="project-description">A short description of the project will go here.</p>
+              <p class="project-stack" id="project-stack">Technology · Technology · Technology</p>
+            </div>
+          </article>
+
+          <button class="arrow arrow-right" id="next" type="button" aria-label="Next project">→</button>
+        </div>
+
+        <div class="dots" id="dots" aria-label="Choose a project"></div>
+        <p class="hint">Use arrow keys or swipe to browse</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Kartikeya Bomb</p>
+      <p>© <span id="year"></span></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
