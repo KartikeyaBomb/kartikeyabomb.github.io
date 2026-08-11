@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <main>
@@ -37,45 +37,61 @@
       <section class="projects" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <p class="eyebrow" id="projects-title">Selected projects</p>
-          <p class="project-count" aria-live="polite"><span id="current-number">01</span> / <span id="total-number">05</span></p>
+          <p class="project-count">05 projects</p>
         </div>
 
-        <div class="carousel" id="carousel">
-          <button class="arrow arrow-left" id="previous" type="button" aria-label="Previous project">←</button>
-
-          <article class="project" aria-live="polite">
-            <div class="project-visual" id="project-visual" aria-hidden="true">
-              <div class="visual-grid"></div>
-              <div class="visual-orbit"></div>
-              <div class="visual-card">
-                <span class="visual-index" id="visual-index">01</span>
-                <strong id="visual-monogram">SZ</strong>
-                <span class="visual-status">Live system</span>
-              </div>
-            </div>
-
+        <div class="project-grid">
+          <article class="project project-featured">
+            <p class="project-number">01</p>
             <div class="project-copy">
-              <p class="project-label" id="project-label">Project 01</p>
-              <h2 id="project-name">Project name</h2>
-              <p class="project-description" id="project-description">A short description of the project will go here.</p>
-              <p class="project-stack" id="project-stack">Technology · Technology · Technology</p>
+              <h2>SafeZone</h2>
+              <p class="project-description">A real-time disaster response platform that brings live hazards, relief resources, and personalized safety guidance into one map.</p>
+              <p class="project-stack">React · Mapbox GL · Supabase · Node.js · OpenAI API</p>
             </div>
           </article>
 
-          <button class="arrow arrow-right" id="next" type="button" aria-label="Next project">→</button>
-        </div>
+          <article class="project">
+            <p class="project-number">02</p>
+            <div class="project-copy">
+              <h2>ReefWatch</h2>
+              <p class="project-description">An edge monitoring network that uses compact audio-vision models to track coral reef health, even with unreliable connectivity.</p>
+              <p class="project-stack">Python · PyTorch · ONNX · Go · MQTT · Docker</p>
+            </div>
+          </article>
 
-        <div class="dots" id="dots" aria-label="Choose a project"></div>
-        <p class="hint">Use arrow keys or swipe to browse</p>
+          <article class="project">
+            <p class="project-number">03</p>
+            <div class="project-copy">
+              <h2>LynxLifts</h2>
+              <p class="project-description">An AI-powered campus rideshare that matches students by route and timing while supporting live tracking, messaging, and payments.</p>
+              <p class="project-stack">React Native · PyTorch · PostGIS · Redis · Kafka · AWS</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <p class="project-number">04</p>
+            <div class="project-copy">
+              <h2>SportsGuessr</h2>
+              <p class="project-description">A GeoGuessr-inspired Android game where players place sports events on the map and score points based on distance.</p>
+              <p class="project-stack">Kotlin · Android SDK · Retrofit · Google Maps API · Room</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <p class="project-number">05</p>
+            <div class="project-copy">
+              <h2>Public Transportation Index</h2>
+              <p class="project-description">A hackathon-winning route request platform that visualizes resident demand and helps uncover underserved transit areas.</p>
+              <p class="project-stack">ArcGIS · Google Maps API · Vercel · Airtable</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>Kartikeya Bomb</p>
-      <p>© <span id="year"></span></p>
+      <p>© 2026</p>
     </footer>
-
-
-    <script src="script.js?v=2"></script>
   </body>
 </html>
